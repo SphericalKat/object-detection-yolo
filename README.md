@@ -1,7 +1,7 @@
-# Face verification using MTCNN and MobileFaceNet
+# Object detection
 
-This project uses MTCNN for face detection and MobileFaceNet to compare two faces. Face spoofing detection and closed eye detection coming soon.
+This app uses YOLO v3 for object detection and displays a list of detected objects. More features including drawing bounding boxes are planned.
 
-## Links to model sources
- - [MTCNN](https://github.com/ipazc/mtcnn)
- - [MobileFaceNet](https://github.com/sirius-ai/MobileFaceNet_TF)
+## References
+ - [YOLO v3](https://pjreddie.com/darknet/yolo/)
+ - [Reference implementation](https://github.com/lordtt13/tensorflow2-advanced-operations/tree/master/Special%20Projects/YOLOv3) 
