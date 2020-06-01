@@ -42,7 +42,7 @@ class CameraActivity : AppCompatActivity() {
                 super.onPictureTaken(result)
                 result.toBitmap {bitmap ->
                     if (bitmap != null) {
-                        MainActivity.bitmap1 = bitmap
+                        MainActivity.clickedImage = bitmap
                         finish()
                     } else {
                         Toast.makeText(this@CameraActivity, "Something went wrong. Try again.", Toast.LENGTH_SHORT).show()

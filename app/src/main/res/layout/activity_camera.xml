@@ -13,7 +13,7 @@
         android:keepScreenOn="true"
         app:cameraMode="picture"
         app:cameraAudio="off"
-        app:cameraFlash="auto"
+        app:cameraFlash="off"
         app:cameraGrid="draw4x4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
