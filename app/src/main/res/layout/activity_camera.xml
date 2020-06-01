@@ -6,18 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".activities.CameraActivity">
 
-    <SurfaceView
-        android:id="@+id/surfaceView"
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        app:cameraMode="picture"
+        app:cameraAudio="off"
+        app:cameraFlash="auto"
+        app:cameraGrid="draw4x4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/camera_fab"
+        android:id="@+id/cameraFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="24dp"
         android:src="@drawable/ic_baseline_photo_camera_24"
-        app:layout_constraintBottom_toBottomOf="@+id/surfaceView"
+        app:layout_constraintBottom_toBottomOf="@+id/camera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
